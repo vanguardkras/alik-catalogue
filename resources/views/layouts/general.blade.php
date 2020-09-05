@@ -7,7 +7,7 @@
     <meta name="description" content="{{ config('data.keywords') }}">
     <meta name="keywords" content="{{ config('data.keywords') }}">
     <!-- Title-->
-    <title>Home</title>
+    <title>{{ env('APP_NAME') }}</title>
     <!-- Favicon-->
     <link rel="icon" href="{{ url('image/favicon.jpg') }}" type="image/x-icon">
     <!-- Stylesheets-->
@@ -69,39 +69,7 @@
                 </div>
 
                 <div class="nav-middle clearfix">
-                    <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="navbar-header">
-                            <!-- Toggle Button -->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navmobileshow" aria-controls="navmobileshow" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                <span class="icon fas fa-align-right"></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse clearfix" id="navmobileshow">
-                            <ul class="navigation clearfix">
-                                <li class="{{ request()->is('/') ? 'current' : '' }}"><a href="{{ route('main') }}">Главная</a></li>
-                                <li class="dropdown {{ request()->is('machine*') ? 'current' : '' }}"><a href="{{ route('machines_all') }}">Спецтехника</a>
-                                    <ul>
-                                        @foreach (config('data.machines') as $machine)
-                                            <li>
-                                                <a href="{{ route('machines_category', ['category' => $machine['link']]) }}">
-                                                    {{ $machine['name'] }}
-                                                </a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </li>
-                                <li class="{{ request()->is('building') ? 'current' : '' }}"><a href="{{ route('building') }}">Строительство</a></li>
-                                <li class="{{ request()->is('about') ? 'current' : '' }}"><a href="{{ route('about') }}">О нас</a></li>
-                                <li class="{{ request()->is('vacancies') ? 'current' : '' }}"><a href="{{ route('vacancies') }}">Вакансии</a></li>
-                                <li class="{{ request()->is('contacts') ? 'current' : '' }}"><a href="{{ route('contacts') }}">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- Main Menu End-->
+                    <x-nav-bar></x-nav-bar>
                 </div>
             </div>
         </div>
@@ -113,6 +81,39 @@
 @yield('content', '')
 
 <!-- footer area start -->
+<section class="contact-mail-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="newslater_wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 margin-sm-bottom-30">
+                            <div class="newslater-footer padding-left-40 padding-right-20 padding-sm-0">
+                                <h4>Свяжитесь с нами</h4>
+                                <a href="{{ route('contacts') }}" class="btb-button dark large">Задать вопрос</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 margin-sm-bottom-30">
+                            <div class="footer-contact-list">
+                                <h4>Наши Контакты</h4>
+                                <p>Телефон: {{ config('data.phone') }} <br>Email: {{ config('data.email') }}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4">
+                            <div class="footer-contact-list">
+                                <h4>Мы в соцсетях</h4>
+                                <div class="follow-icons">
+                                    <a href="{{ config('data.instagram') }}"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="footer-area">
     <div class="footer-top padding-top-150 padding-bottom-50">
         <div class="container">

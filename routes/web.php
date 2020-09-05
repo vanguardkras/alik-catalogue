@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,10 @@ Route::get('machines_all', $pagesController . '@machinesAll')->name('machines_al
 Route::get('machines_category/{category}', $pagesController . '@machinesCategory')->name('machines_category');
 Route::get('/', $pagesController . '@main')->name('main');
 Route::get('vacancies', $pagesController . '@vacancies')->name('vacancies');
+
+// Send contact form messgage
+Route::post('message', 'MessagesController@message')->name('message');
+
+
+// Admin routes
+Route::get('admin', 'AdminController@catalog')->name('admin');

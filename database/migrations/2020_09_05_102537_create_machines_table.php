@@ -3,9 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\User;
 
-class CreateUsersTable extends Migration
+class CreateMachinesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,19 +13,13 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('machines', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->foreignId('machine_category_id')->constrained();
+            $table->string('image');
             $table->timestamps();
         });
-
-        $admin = new User();
-        $admin->name = env('ADMIN_USERNAME');
-        $admin->password = bcrypt(env('ADMIN_PASSWORD'));
-        $admin->save();
     }
 
     /**
@@ -36,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('machines');
     }
 }
