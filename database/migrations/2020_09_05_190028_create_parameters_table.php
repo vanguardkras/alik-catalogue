@@ -15,7 +15,7 @@ class CreateParametersTable extends Migration
     {
         Schema::create('parameters', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('machine_id')->constrained();
+            $table->foreignId('machine_id')->constrained()->cascadeOnDelete();
             $table->foreignId('category_parameter_id')->constrained();
             $table->string('value');
             $table->timestamps();

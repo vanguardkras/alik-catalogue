@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Machine;
 use App\MachineCategory;
 use Illuminate\Http\Request;
 
@@ -31,8 +32,9 @@ class PagesController extends Controller
     /**
      * Страница "Карточка единицы спецтехники"
      */
-    public function machine() {
-        return view('machine');
+    public function machine($id) {
+        $machine = Machine::with(['parameters', 'category'])->where('id', $id)->first();
+        return view('machine', compact('machine'));
     }
 
     /**
@@ -45,10 +47,13 @@ class PagesController extends Controller
 
     /**
      * Страница "Каталог одной категории"
+     * @param string $category
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function machinesCategory(string $category) {
-        //echo $category;
-        return view('machines_category');
+        $category = MachineCategory::getCategoryByName($category);
+        $machines = Machine::where('machine_category_id', $category->id)->get();
+        return view('machines_category', compact('category', 'machines'));
     }
 
     /**

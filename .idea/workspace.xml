@@ -4,56 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80aec916-246c-4412-bcb2-16fb16573b77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/CategoryParameter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Machine.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MachineCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/ContactForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Parameter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/NavBar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/MachinesFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ParametersFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_102415_create_machine_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_102537_create_machines_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_190005_create_category_parameters_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_190028_create_parameters_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/MachineSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ParametersSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/bulldozers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/cranes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/dumps.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/excavators.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/excavators_loaders.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/loaders.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/rolls.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/machines_types/trucks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/main/machine-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/slideshow/slide-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/slideshow/slide-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/MARKDOWN.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/catalog.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/nav-bar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/contact_form.blade.php" afterDir="false" />
+    <list default="true" id="80aec916-246c-4412-bcb2-16fb16573b77" name="Default Changelist" comment="Almost finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Machine.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Machine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MachineCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MachineCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/MachinesFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/MachinesFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_102537_create_machines_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_102537_create_machines_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_190028_create_parameters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_190028_create_parameters_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/image/intro/why-choose-us1-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/intro/why-choose-us1-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/image/page/about-image-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/page/about-image-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/image/page/our-project-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/image/page/our-project-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/building.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/building.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contacts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contacts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/general.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/general.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/machines_all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/machines_all.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vacancies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vacancies.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/MARKDOWN.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/catalog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/catalog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/machine.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/machine.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/machines_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/machines_category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -223,21 +187,36 @@
       <option name="presentableId" value="Default" />
       <updated>1599212149320</updated>
       <workItem from="1599212150791" duration="9666000" />
-      <workItem from="1599279432806" duration="28895000" />
+      <workItem from="1599279432806" duration="38182000" />
     </task>
+    <task id="LOCAL-00001" summary="Almost finished">
+      <created>1599310442593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599310442593</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Almost finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost finished" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599300076497">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="570" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599300076497" />
+    <state x="453" y="77" key="CommitChangelistDialog2" timestamp="1599313977970">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="453" y="77" key="CommitChangelistDialog2/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599313977970" />
     <state width="1637" height="275" key="GridCell.Tab.0.bottom" timestamp="1599279478937">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -258,17 +237,17 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="674" y="433" key="NewPhpFileDialog/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599308142081" />
-    <state x="432" y="243" key="Vcs.Push.Dialog.v2" timestamp="1599301824871">
+    <state x="432" y="243" key="Vcs.Push.Dialog.v2" timestamp="1599310443914">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="432" y="243" key="Vcs.Push.Dialog.v2/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599301824871" />
+    <state x="432" y="243" key="Vcs.Push.Dialog.v2/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599310443914" />
     <state x="547" y="243" width="585" height="534" key="find.popup" timestamp="1599301959167">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="547" y="243" width="585" height="534" key="find.popup/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599301959167" />
-    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1599301585121">
+    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1599316082345">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599301585121" />
+    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup/0.0.1680.1020/-1680.0.1680.1020@0.0.1680.1020" timestamp="1599316082345" />
   </component>
 </project>
