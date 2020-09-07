@@ -124,7 +124,7 @@
 
         <div class="container">
             <div class="row">
-                @foreach(config('data.machines') as $machine)
+                @foreach($machines as $machine)
                     <div class="col-md-3 margin-bottom-50 margin-sm-bottom-30 wow fadeInUp">
                         <div class="team-member-list">
                             <div class="member">

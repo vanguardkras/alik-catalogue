@@ -61,29 +61,7 @@ class PagesController extends Controller
      */
     public function main() {
 
-        $machines = [
-            [
-                'image' => 'main/machine-1.webp',
-                'type' => 'Экскаватор',
-                'model' => 'Hyundai R140W-9S',
-            ],
-            [
-                'image' => 'main/machine-1.webp',
-                'type' => 'Экскаватор',
-                'model' => 'Hyundai R140W-9S',
-            ],
-            [
-                'image' => 'main/machine-1.webp',
-                'type' => 'Экскаватор',
-                'model' => 'Hyundai R140W-9S',
-            ],
-            [
-                'image' => 'main/machine-1.webp',
-                'type' => 'Экскаватор',
-                'model' => 'Hyundai R140W-9S',
-            ],
-
-        ];
+        $machines = MachineCategory::all();
 
         return view('main', compact('machines'));
     }
