@@ -9,39 +9,4 @@ return [
     'email_2' => 'alikgrup@mail.ru',
     'address' => 'г. Красноярск, ул. Грунтовая, д. 19А, офис 28',
     'instagram' => 'https://instagram.com',
-    //TODO: make through database and component
-    'machines' => [
-        [
-            'name' => 'Экскаваторы',
-            'code' => 'excavators',
-        ],
-        [
-            'name' => 'Краны',
-            'code' => 'cranes',
-        ],
-        [
-            'name' => 'Самосвалы',
-            'code' => 'dumps',
-        ],
-        [
-            'name' => 'Погрузчики',
-            'code' => 'loaders',
-        ],
-        [
-            'name' => 'Экскаватор-погрузчики',
-            'code' => 'excavators_loaders',
-        ],
-        [
-            'name' => 'Бульдозеры',
-            'code' => 'bulldozers',
-        ],
-        [
-            'name' => 'Воровайки',
-            'code' => 'trucks',
-        ],
-        [
-            'name' => 'Катки',
-            'code' => 'rolls',
-        ],
-    ],
 ];
