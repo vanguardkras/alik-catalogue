@@ -29,9 +29,8 @@ class MessagesController extends Controller
         $message .= isset($request->phone) ? "*Телефон:* {$request->phone}\n" : '';
         $message .= "*Текст сообщения*\n";
         $message .= "_{$request->text}_";
-
         Http::post('https://api.telegram.org/bot' . env('TELEGRAM_TOKEN') . '/sendMessage', [
-            'chat_id' => env('TELEGRAM_CHAT_ID'),
+            'chat_id' => '207435766',
             'text' => addcslashes($message, $charlist),
             'parse_mode' => 'MarkdownV2',
         ]);

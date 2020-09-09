@@ -31,6 +31,6 @@ Route::post('message', 'MessagesController@message')->name('message');
 
 // Admin routes
 Route::get('admin', 'AdminController@catalog')->name('admin');
-Route::get('machine/{machine}/delete', 'AdminCOntroller@deleteMachine')->name('delete_machine');
+Route::get('machine/{machine}/delete', 'AdminController@deleteMachine')->name('delete_machine');
 Route::patch('machine/{machine}', 'AdminController@updateMachine')->name('patch_machine');
 Route::post('machine/create', 'AdminController@createMachine')->name('create_machine');
