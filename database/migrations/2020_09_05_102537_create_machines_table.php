@@ -18,7 +18,7 @@ class CreateMachinesTable extends Migration
             $table->string('name');
             $table->foreignId('machine_category_id')->constrained();
             $table->string('image');
-            $table->mediumInteger('price');
+            $table->mediumInteger('price')->nullable();
             $table->timestamps();
         });
     }

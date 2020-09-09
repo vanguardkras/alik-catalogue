@@ -13,9 +13,9 @@
                             </h1>
                             <div class="requirement-list padding-bottom-50">
                                 <ul>
-                                    <li><i class="fas fa-angle-right padding-right-10 margin-tb-10"></i>Разнорабочие</li>
-                                    <li><i class="fas fa-angle-right padding-right-10 margin-tb-10"></i>Водители</li>
-                                    <li><i class="fas fa-angle-right padding-right-10 margin-tb-10"></i>Операторы крана</li>
+                                    <li><i class="fas fa-angle-right padding-right-10 margin-tb-10"></i>Машинист экскаватора</li>
+                                    <li><i class="fas fa-angle-right padding-right-10 margin-tb-10"></i>Водитель самосвала</li>
+                                    <li><i class="fas fa-angle-right padding-right-10 margin-tb-10"></i>Разнорабочий</li>
                                 </ul>
                                 <h5 class="mt-4 text-primary">
                                     По вопросам трудоустройства обращаться по телефону:

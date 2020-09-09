@@ -16,7 +16,7 @@
                                     >
                                 </div>
                                 <div class="texts">
-                                    <span class="categorie">Цена: {{ $machine->price }} руб.</span>
+                                    <span class="categorie">{{ $machine->price ? 'Цена: ' . $machine->price . ' руб' : 'Индивидуальный расчет' }}</span>
                                     <h3 class="title">
                                         {{ $machine->name }}
                                     </h3>

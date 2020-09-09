@@ -60,7 +60,7 @@
                     </table>
                 </td>
                 <td class="align-middle">
-                    <input type="number" name="price" class="form-control-sm form-control" required>
+                    <input type="number" name="price" class="form-control-sm form-control">
                 </td>
             </tr>
             <tr>

@@ -20,7 +20,7 @@
                             <div class="para-content">
                                 <p>
                                     Мы предоставляем услуги обустройства дворов, дорог, тротуаров, газонов, отмосток и
-                                    т.д
+                                    т.д.
                                 </p>
                             </div>
                             <div class="btnwrp">
@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="col-md-6 slide-caption">
                             <div class="main-title-box">
-                                <h2 class="big-title">
+                                <h2 class="big-title color-black">
                                     Гарантируем качество и надежность
                                 </h2>
                             </div>

@@ -23,13 +23,14 @@ class CreateMachineCategoriesTable extends Migration
 
         $categories = [
             ['name' => 'Экскаваторы', 'code' => 'excavators'],
-            ['name' => 'Краны', 'code' => 'cranes'],
+            ['name' => 'Автокраны', 'code' => 'cranes'],
             ['name' => 'Самосвалы', 'code' => 'dumps'],
-            ['name' => 'Погрузчики', 'code' => 'loaders'],
+            ['name' => 'Фронтальные погрузчики', 'code' => 'loaders'],
             ['name' => 'Экскаватор-погрузчики', 'code' => 'excavators_loaders'],
             ['name' => 'Бульдозеры', 'code' => 'bulldozers'],
             ['name' => 'Воровайки', 'code' => 'trucks'],
             ['name' => 'Катки', 'code' => 'rolls'],
+            ['name' => 'Минипогрузчики', 'code' => 'miniloaders'],
         ];
 
         foreach ($categories as $category) {

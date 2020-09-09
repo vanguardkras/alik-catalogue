@@ -14,7 +14,7 @@
 
             <div class="col-lg-6">
                 <div class="requirement-list">
-                    <h5>Цена: {{ $machine->price }} руб</h5>
+                    <h5>{{ $machine->price ? 'Цена: ' . $machine->price . ' руб' : 'Индивидуальный расчет' }}</h5>
                     <ul>
                         @foreach ($machine->parameters as $parameter)
                             <li><i class="fas fa-angle-right padding-right-10 margin-tb-10"></i>
