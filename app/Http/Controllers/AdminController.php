@@ -110,6 +110,6 @@ class AdminController extends Controller
 
         $imageResize = new ImageResize($imageFullPath);
         $imageResize->crop(640, 480);
-        $imageResize->save($imageFullPath, IMAGETYPE_JPEG, 90);
+        $imageResize->save($imageFullPath, IMAGETYPE_JPEG, 95);
     }
 }
