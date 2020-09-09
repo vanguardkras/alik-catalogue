@@ -26,7 +26,7 @@
 <div class="container mt-5">
     <h1>Добавить новую единицу</h1>
     <form action="{{ route('create_machine') }}" method="post" enctype="multipart/form-data">
-        <table class="table table-striped">
+        <table class="table table-striped table-sm">
             <thead>
             <tr>
                 <th scope="col">Изображение</th>
@@ -55,7 +55,7 @@
                     </select>
                 </td>
                 <td class="align-middle">
-                    <table id="parameters">
+                    <table id="parameters" class="table table-sm">
                         <tr></tr>
                     </table>
                 </td>
@@ -72,7 +72,7 @@
         </table>
     </form>
     <h1>Каталог спецтехники</h1>
-    <table class="table table-striped">
+    <table class="table table-striped table-sm">
         <thead>
         <tr>
             <th scope="col">Изображение</th>
@@ -102,7 +102,7 @@
                             class="small text-secondary">{{ $categories[$machine->machine_category_id - 1]->name }}</span>)
                     </td>
                     <td class="align-middle">
-                        <table>
+                        <table class="table table-sm">
                             @foreach ($machine->parameters as $parameter)
                                 <tr>
                                     <td>
