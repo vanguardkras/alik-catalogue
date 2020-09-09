@@ -109,7 +109,7 @@ class AdminController extends Controller
         $imageFullPath = storage_path('app/public/' . $path);
 
         $imageResize = new ImageResize($imageFullPath);
-        $imageResize->crop(320, 240);
+        $imageResize->crop(640, 480);
         $imageResize->save($imageFullPath, IMAGETYPE_JPEG, 90);
     }
 }
