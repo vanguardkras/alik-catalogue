@@ -8,7 +8,7 @@
                     <!-- Blog 1 start -->
                     <div class="blog-1 blog-big">
                         <div class="blog-photo">
-                            <img src="image/blog/blog-single-1.jpg" alt="blog-img" class="img-fluid">
+                            <img src="{{ asset("image/service/main.jpg") }}" alt="blog-img" class="img-fluid">
                         </div>
                         <div class="detail">
                             <h1 class="hadding-title">
@@ -29,11 +29,11 @@
                 </div>
             </div>
             <div class="row">
-                @for ($i = 0; $i < 12; $i++)
+                @for ($i = 1; $i <= 10; $i++)
                     <div class="col-md-4 margin-bottom-30">
                         <div class="service-item clearfix">
                             <div class="thumb">
-                                <img src="image/service/service-item1-2.jpg" alt="image">
+                                <img src="{{ asset("image/service/$i.jpg") }}" alt="image">
                             </div>
                         </div>
                     </div><!-- /.col-md-4 -->

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Machine;
 use App\MachineCategory;
 use App\Parameter;
+use Gumlet\ImageResize;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -34,8 +35,7 @@ class AdminController extends Controller
         $machine->machine_category_id = $request->machine_category_id;
         $machine->price = $request->price;
 
-        $path = $request->file('image')->store('machines', 'public');
-        $machine->image = $path;
+        $this->uploadImage($machine, $request);
 
         $machine->save();
 
@@ -64,8 +64,7 @@ class AdminController extends Controller
 
         if ($request->hasFile('image')) {
             Storage::disk('public')->delete($machine->image);
-            $path = $request->file('image')->store('machines', 'public');
-            $machine->image = $path;
+            $this->uploadImage($machine, $request);
         }
 
         $machine->save();
@@ -93,5 +92,24 @@ class AdminController extends Controller
         $machine->delete();
 
         return back();
+    }
+
+    /**
+     * Updload the machine image
+     *
+     * @param Machine $machine
+     * @param Request $request
+     * @throws \Gumlet\ImageResizeException
+     */
+    private function uploadImage(Machine $machine, Request $request)
+    {
+        $path = $request->file('image')->store('machines', 'public');
+        $machine->image = $path;
+
+        $imageFullPath = storage_path('app/public/' . $path);
+
+        $imageResize = new ImageResize($imageFullPath);
+        $imageResize->crop(320, 240);
+        $imageResize->save($imageFullPath, IMAGETYPE_JPEG, 90);
     }
 }
