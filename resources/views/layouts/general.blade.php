@@ -64,7 +64,9 @@
             <div class="container clearfix">
                 <div class="logo-middle">
                     <div class="logo">
+                    <a href="/">
                         <i class="construct-excavator"></i>
+                    </a>
                     </div>
                 </div>
 
